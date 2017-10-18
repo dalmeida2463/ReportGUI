@@ -28,7 +28,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Dave
+ * @author Dave Almeida
  */
 public class ReportGUI extends Application {
 
