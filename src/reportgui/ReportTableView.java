@@ -44,7 +44,7 @@ public class ReportTableView extends TableView{
         TableColumn firstNameColumn = 
         new TableColumn("Offender First Name");
         firstNameColumn.setMinWidth(150);
-        officerFirstColumn.setCellValueFactory(
+        firstNameColumn.setCellValueFactory(
         new PropertyValueFactory<ReportData, String>("firstName"));
         
         TableColumn lastNameColumn = 
@@ -65,15 +65,15 @@ public class ReportTableView extends TableView{
         locationColumn.setCellValueFactory(
         new PropertyValueFactory<ReportData, String>("location"));
         
-        TableColumn offenceColumn = 
+        TableColumn offenseColumn = 
         new TableColumn("Offense");
-        offenceColumn.setMinWidth(150);
-        offenceColumn.setCellValueFactory(
-        new PropertyValueFactory<ReportData, String>("offence"));
+        offenseColumn.setMinWidth(150);
+        offenseColumn.setCellValueFactory(
+        new PropertyValueFactory<ReportData, String>("offense"));
         
         this.getColumns().addAll(officerFirstColumn, officerLastColumn, 
                 firstNameColumn, lastNameColumn, offenderAgeColumn,
-                locationColumn, offenceColumn);
+                locationColumn, offenseColumn);
     }
 
 }

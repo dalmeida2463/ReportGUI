@@ -73,12 +73,11 @@ public class CSVReportReader extends ReportFactory{
                 
                 firstCharacter = nextComma + 1;
                 int endChar = line.length();
-                endChar--;
                 offense = line.substring(firstCharacter, endChar);
                 
                 
                 ReportData data = new ReportData(officerFirst, officerLast,
-                        firstName, lastName, offenderAge, location);
+                        firstName, lastName, offenderAge, location, offense);
                 System.out.println("Adding " + data.toString());
                 list.add(data);
             }
